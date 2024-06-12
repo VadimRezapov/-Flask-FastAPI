@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Куртки мужские
+{% endblock %}
+
+{% block content %}
+    <div class="jacket">
+        <h2>Куртки мужские</h2>
+        {% for jacket in content_block%}
+            <h3>{{jacket.type}}</h3>
+            <img src="{{jacket.pict}}" alt="фото">
+            <p> стоимость: {{jacket.cost}} руб.</p>
+        {% endfor%}
+    </div>
+{% endblock %}

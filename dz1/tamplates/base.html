@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+	{% block title %}  {% endblock %}
+    </title>
+</head>
+
+<body>
+<h2 class="text-monospace">Магазин одежды и обуви "Приветик!"</h2>
+<h2 class="text-monospace">Выберите раздел:</h2>
+
+<nav>
+<ul>
+    <li> <a href="/jeans">Джинсы</a></li>
+    <li> <a href="/jacket">Куртки</a></li>
+    <li> <a href="/shoes">Обувь</a></li>
+</ul>
+</nav>
+
+<header>
+    {% block content %}
+
+    {% endblock %}
+</header>
+
+<footer>
+    <p> Контакты: тел +7 987-654-32-10, г. Нью-Васюки ул. Поца, д. 13 </p>
+</footer>
+</body>
+</html>

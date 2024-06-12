@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Мужская обувь
+{% endblock %}
+
+{% block content %}
+    <div class="shoes">
+        <h2>Мужская обувь</h2>
+        {% for shoes in content_block%}
+            <h3>{{shoes.type}}</h3>
+            <img src="{{shoes.pict}}" alt="фото">
+            <p> стоимость: {{shoes.cost}} руб.</p>
+        {% endfor%}
+    </div>
+{% endblock %}
